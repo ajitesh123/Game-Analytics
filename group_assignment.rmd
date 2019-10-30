@@ -1,0 +1,38 @@
+---
+title: "ASSIGNMENT Three"
+author:
+- "Section "
+- "Ajitesh"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+```{r, include=FALSE}
+### Determine notebook defaults:
+knitr::opts_chunk$set(echo=TRUE,      # Print all the code in all the chunks
+                      warning=FALSE,  # Don't print warning statements
+                      message=FALSE,  # Don't print other R output messages
+                      comment=NA)     # Helps produce prettier output
+```
+
+```{r, echo=FALSE, message = FALSE, warning = FALSE}
+### Load packages:
+library(gmodels)
+library(modelr)
+library(janitor)
+library(haven)
+library(readxl)
+library(knitr)
+library(psych)
+library(statar)
+library(tidyverse)
+library(mktg482)
+library(sjPlot)
+```
+
+### Read in the data:
+```{r}
+# use load("filename.Rdata") for .Rdata files
+load("bbb.Rdata")
+```
