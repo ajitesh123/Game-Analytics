@@ -1,8 +1,7 @@
 ---
-title: "ASSIGNMENT Three"
+title: "ASSIGNMENT Two"
 author:
-- "Section "
-- "Ajitesh"
+- "Section 51"
 output:
   pdf_document: default
   html_notebook: default
@@ -29,10 +28,18 @@ library(statar)
 library(tidyverse)
 library(mktg482)
 library(sjPlot)
+library(skimr) 
 ```
 
 ### Read in the data:
 ```{r}
 # use load("filename.Rdata") for .Rdata files
-load("bbb.Rdata")
+data = load("creative_gaming_propensity.Rdata")
 ```
+
+### Part 1 - Question 1
+```{r}
+head(data)
+
+```
+
